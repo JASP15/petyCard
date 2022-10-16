@@ -1,5 +1,9 @@
 <template>
- <HomeBanner />
+  <div>
+    <HomeBanner />
+    <HomeFeatures />
+    
+  </div>
 </template>
 
 <script>
