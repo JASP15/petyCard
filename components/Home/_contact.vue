@@ -8,7 +8,7 @@
 
 <style scoped>
   .background-cust{
-    background-image: url("~/assets/images/descarga.png");
-    background-position: center ;
+    background-image: url("~/assets/images/descarga2.png");
+    background-position: center 86%;
   }
 </style>
