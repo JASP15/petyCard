@@ -2,6 +2,9 @@
   <div>
     <HomeBanner />
     <HomeFeatures />
+    <HomeSponsors />
+    <HomeContact />
+
     
   </div>
 </template>

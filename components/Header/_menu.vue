@@ -23,7 +23,7 @@
                     </ul>
                 </div>
                 <div class="w-1/4 flex justify-end">
-                    <a href="/" class="text-primary hover:text-primary-700 text-2xl font-semibold">Iniciar Sesión</a>
+                    <ButtonComponent />
                 </div>
                 
             </div>
