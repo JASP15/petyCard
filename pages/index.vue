@@ -3,7 +3,7 @@
     <HomeBanner />
     <HomeFeatures />
     <HomeSponsors />
-    <HomeContact />
+    <HomeBand />
 
     
   </div>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <button class="cssbuttons-io">
-            <span> Iniciar Sesión</span>
+            <span> <slot></slot></span>
         </button>
     </div>
 </template>
@@ -15,16 +15,12 @@
  letter-spacing: 0.05em;
  border-radius: 0.8em;
  border: none;
- background: linear-gradient(to right, #33F3FF, #00B6C2);
  color: ghostwhite;
  overflow: hidden;
+ @apply hover:bg-gradient-to-r hover:from-[#33F3FF] hover:to-[#00B6C2] 
 }
 
-.cssbuttons-io svg {
- width: 1.2em;
- height: 1.2em;
- margin-right: 0.5em;
-}
+
 
 .cssbuttons-io span {
  position: relative;

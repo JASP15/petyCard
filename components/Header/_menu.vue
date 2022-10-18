@@ -8,22 +8,22 @@
                 <div class="w-2/4">
                     <ul class="flex justify-center items-center">
                         <li class="px-4">
-                            <a class="text-primary hover:text-primary-700 text-2xl font-semibold" href="#">Inicio</a>
+                            <a class="text-primary hover:text-white text-2xl font-semibold" href="#">Inicio</a>
                         </li>
                         <li class="px-4">
-                            <a class="text-primary hover:text-primary-700 text-2xl font-semibold" href="#">Beneficios</a>
+                            <a class="text-primary hover:text-white text-2xl font-semibold" href="#">Beneficios</a>
                         </li>
                         <li class="px-4">
-                            <a class="text-primary hover:text-primary-700 text-2xl font-semibold" href="#">Aliados</a>
+                            <a class="text-primary hover:text-white text-2xl font-semibold" href="#">Aliados</a>
                         </li>
                         <li class="px-4">
-                            <a class="text-primary hover:text-primary-700 text-2xl font-semibold" href="#">FAQs</a>
+                            <a class="text-primary hover:text-white text-2xl font-semibold" href="#">Solicitar</a>
                         </li>
                         
                     </ul>
                 </div>
                 <div class="w-1/4 flex justify-end">
-                    <ButtonComponent />
+                    <ButtonComponent>  Iniciar Sesión </ButtonComponent>
                 </div>
                 
             </div>
