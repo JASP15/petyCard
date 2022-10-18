@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <div class="container mx-auto">
+        <div class="container mx-auto py-36">
             <p class="text-secondary-600 text-4xl font-bold text-center mb-4">Úsala <span class="text-primary ">donde </span> y <span class="text-primary ">cuando</span> quieras </p>
             <p class=" text-lg text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quidem, illum quod cupiditate eiu!</p>
             <div class="flex flex-wrap justify-center items-center py-12 mt-16">
