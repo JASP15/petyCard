@@ -21,6 +21,6 @@
 <style scoped>
   .background-cust{
     background-image: url("~/assets/images/descarga2.png");
-    background-position: center 86%;
+    background-position: 0 86%;
   }
 </style>
