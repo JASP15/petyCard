@@ -7,6 +7,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
    
   },
   "dependencies": {
