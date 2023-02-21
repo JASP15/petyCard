@@ -39,7 +39,35 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: {
+        to: 'jasp1593@gmail.com',
+      },
+      smtp: {
+        
+        auth: {
+          user: 'soporte@moldimaq.com',
+          pass: '1q2w3e4r5t',
+        },
+        host: "smtp.titan.email",
+        port: 465,
+        secure: true,
+      },
+    }],
+],
+mail: {
+  message: {
+    to: 'jasp1593@gmail.com',
+  },
+  smtp: {
+    host: "smtp.titan.email",
+    port: 465,
+    secure: true,
+  },
+},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

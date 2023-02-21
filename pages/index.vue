@@ -4,6 +4,7 @@
     <HomeFeatures />
     <HomeSponsors />
     <HomeBand />
+    <HomeContact />
 
     
   </div>
