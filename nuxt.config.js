@@ -42,21 +42,7 @@ export default {
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/axios',
-    ['nuxt-mail', {
-      message: {
-        to: 'jasp1593@gmail.com',
-      },
-      smtp: {
-        
-        auth: {
-          user: 'soporte@moldimaq.com',
-          pass: '1q2w3e4r5t',
-        },
-        host: "smtp.titan.email",
-        port: 465,
-        secure: true,
-      },
-    }],
+   
 ],
 mail: {
   message: {

@@ -4,8 +4,6 @@
     <HomeFeatures />
     <HomeSponsors />
     <HomeBand />
-    <HomeContact />
-
     
   </div>
 </template>

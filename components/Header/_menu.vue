@@ -23,7 +23,10 @@
                     </ul>
                 </div>
                 <div class="w-1/4 flex justify-end">
-                    <ButtonComponent>  Iniciar Sesión </ButtonComponent>
+                    <a href="/contact">
+                        <ButtonComponent>  Comienza ahora </ButtonComponent>
+
+                    </a>
                 </div>
                 
             </div>
