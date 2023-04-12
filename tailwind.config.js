@@ -2,6 +2,9 @@
 module.exports = {
   content: [],
   theme: {
+    container: {
+      padding: '2rem',
+    },
     extend: {
       colors:{
         primary: {

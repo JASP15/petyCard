@@ -1,10 +1,9 @@
 <template>
-    <div class="background-cust">
+    <div id="contacto" class="background-cust">
         <div class=" pt-40 pb-10">
             <div class="container mx-auto">
-                <div class="w-1/2 block mx-auto">
+                <div class="w-2/3 lg:w-1/2 block mx-auto">
                     <p class="text-white text-4xl font-bold text-center">Comienza  desde <span class="text-primary">hoy</span>.</p>
-                   
                     <div class=" w-full  pt-10">
                         <div  class="relative">
                             <div class="w-full">
