@@ -7,33 +7,33 @@
                     <div class=" w-full  pt-10">
                         <div  class="relative">
                             <div class="w-full">
-                                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-opacity-20">
+                                <form ref="formContact" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-opacity-20" >
                                     <div class="mb-4">
-                                        <label class="block text-black text-sm font-bold mb-2" for="username">
+                                        <label class="block text-white text-sm font-bold mb-2" for="username">
                                         Nombre 
                                         </label>
                                         <input v-model="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" >
                                     </div>
                                     <div class="mb-4">
-                                        <label class="block text-black text-sm font-bold mb-2" for="username2">
+                                        <label class="block text-white text-sm font-bold mb-2" for="username2">
                                         Correo
                                         </label>
                                         <input v-model="mail"  class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username2" type="text" >
                                     </div>
                                     <div class="mb-4">
-                                        <label class="block text-black text-sm font-bold mb-2" for="username3">
+                                        <label class="block text-white text-sm font-bold mb-2" for="username3">
                                         Teléfono
                                         </label>
                                         <input v-model="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username3" type="text" >
                                     </div>
                                     <div class="mb-4">
-                                        <label class="block text-black text-sm font-bold mb-2" for="username4">
+                                        <label class="block text-white text-sm font-bold mb-2" for="username4">
                                         Nombre de la compañía
                                         </label>
                                         <input v-model="company" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username4" type="text" >
                                     </div>
                                     <div class="mb-4">
-                                        <label class="block text-black text-sm font-bold mb-2" for="username5">
+                                        <label class="block text-white text-sm font-bold mb-2" for="username5">
                                         Giro de la empresa
                                         </label>
                                         <input v-model="rol" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username5" type="text" >
@@ -63,14 +63,21 @@ export default {
   },
   methods: {
     async onSubmit() {
-        const res = await this.$axios.$post('http://backserver.petycard.com/api/company', {
-            company_name:this.company, 
-            company_rol:  this.rol, 
-            register_name:  this.name, 
-            register_phone:  this.phone, 
-            register_email:  this.name,  
-            })
-            alert(res.detail)
+        try {
+            const res = await this.$axios.$post('http://backserver.petycard.com/api/company', {
+                company_name:this.company, 
+                company_rol:  this.rol, 
+                register_name:  this.name, 
+                register_phone:  this.phone, 
+                register_email:  this.name,  
+                })
+                this.$refs.formContact.reset()
+                alert(res.detail?res.detail : 'Se ha registrado correctamente tu información')
+            
+        } catch (error) {
+            this.$refs.formContact.reset()
+            alert('Ha ocurrido un error, por favor inténtalo más tarde')
+        }
             
     },
   },
