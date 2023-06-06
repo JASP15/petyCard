@@ -20,7 +20,7 @@
                 <p class="text-center text-5xl text-primary-900 mb-4">
                     <i class="fas fa-mobile-alt"></i>
                 </p>
-               <p class="text-primary-800 font-semibold text-xl text-center">Encuentra el negocio o servicio m{as cercano a tu localidad</p>
+               <p class="text-primary-800 font-semibold text-xl text-center">Encuentra el negocio o servicio más cercano a tu localidad</p>
             </div>
 
             <div class="w-full lg:w-1/3 pb-8 px-4">
