@@ -3,7 +3,9 @@
         <div class=" pt-40 pb-10">
             <div class="container mx-auto">
                 <div class="w-full md:w-2/3 lg:w-1/2 block mx-auto">
-                    <p class="text-white text-4xl font-bold text-center">Forma parte de nosotros y obtén  <span class="text-primary">beneficios</span> exclusivos</p>
+                    <p v-if="!showPetlover" class="text-white text-4xl font-bold text-center">Forma parte de nuestros <span class="text-primary"> aliados </span> y obtén  <span class="text-primary">beneficios</span> exclusivos</p>
+                    <p v-if="showPetlover" class="text-white text-4xl font-bold text-center">Únete a nuestra comunidad de  <span class="text-primary">petlovers</span>
+</p>
                     <div class=" w-full  pt-10">
                         <div  class="relative">
                             <div class="w-full">
