@@ -16,10 +16,11 @@
                                 </div>
                                 <div class="flip-back p-4">
                                     <p class="text-center text-primary-700 text-xl font-medium">Beneficios</p>
-                                    <div class="text-white text-left">
-                                        <ul class="mt-4">
+                                    <div class="text-white text-left h-full">
+                                        <ul class="mt-4 relative h-[170px]">
                                             <li>10% en efectivo</li>
                                             <li>15% tarjeta en tienda</li>
+                                            <li class="text-[9px] mt-6 absolute bottom-0">*No es acumulable con otras promociones</li>
     
                                         </ul>
     
@@ -41,18 +42,18 @@ export default {
     return {
         listSponsors:[
             {
-                name:'PETCO',
-                img: 'https://www.seekpng.com/png/full/336-3362719_petco-logo-petco-cat-and-dog.png',
+                name:'PetyCard',
+                img: false,
 
             },
             {
-                name:'+KOTA',
-                img: 'https://maskotashop.com/wp-content/uploads/2021/04/logo-maskotashop-full.png',
+                name:'PetyCard + ',
+                img: false,
 
             },
             {
-                name:'GMVT',
-                img: 'https://www.mimaskotbolivia.com/images/logo.png',
+                name:'PetyCard  +2',
+                img: false,
 
             },
             {
