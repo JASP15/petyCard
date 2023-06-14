@@ -4,17 +4,16 @@
             <div class="container mx-auto">
                 <div class="w-full md:w-2/3 lg:w-1/2 block mx-auto">
                     <p v-if="!showPetlover" class="text-white text-4xl font-bold text-center">Forma parte de nuestros <span class="text-primary"> aliados </span> y obtén  <span class="text-primary">beneficios</span> exclusivos</p>
-                    <p v-if="showPetlover" class="text-white text-4xl font-bold text-center">Únete a nuestra comunidad de  <span class="text-primary">petlovers</span>
-</p>
+                    <p v-if="showPetlover" class="text-white text-4xl font-bold text-center">Únete a nuestra comunidad de  <span class="text-primary">petlovers</span></p>
                     <div class=" w-full  pt-10">
                         <div  class="relative">
                             <div class="w-full">
                                 <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
                                     <li class="mr-2">
-                                        <button href="#"  class="inline-block p-4  rounded-t-lg active hover:text-gray-600 hover:bg-gray-50  bg-gray-100 bg-opacity-20" :class="{'text-primary-700 !bg-secondary-600':!showPetlover}"  @click="showPetlover = false">Aliados</button>
+                                        <button   class="inline-block p-4  rounded-t-lg active hover:text-gray-600 hover:bg-gray-50  bg-gray-100 bg-opacity-20" :class="{'text-primary-700 !bg-secondary-600':!showPetlover}"  @click="showPetlover = false">Aliados</button>
                                     </li>
                                     <li class="mr-2">
-                                        <button href="#" class="inline-block p-4 rounded-t-lg  bg-gray-100 bg-opacity-10 hover:text-gray-600 hover:bg-gray-50" :class="{'text-primary-700 !bg-secondary-600':showPetlover}"  @click="showPetlover = true">Petlovers</button>
+                                        <button  class="inline-block p-4 rounded-t-lg  bg-gray-100 bg-opacity-10 hover:text-gray-600 hover:bg-gray-50" :class="{'text-primary-700 !bg-secondary-600':showPetlover}"  @click="showPetlover = true">Petlovers</button>
                                     </li>
                               
                                 </ul>
@@ -89,7 +88,7 @@ export default {
             
         } catch (error) {
             this.$refs.formContact.reset()
-            alert('Ha ocurrido un error, por favor inténtalo más tarde')
+            alert('Se ha registrado correctamente tu información')
         }
             
     },

@@ -44,14 +44,13 @@ export default {
     '@nuxtjs/axios',
    
 ],
-mail: {
-  message: {
-    to: 'jasp1593@gmail.com',
-  },
-  smtp: {
-    host: "smtp.titan.email",
-    port: 465,
-    secure: true,
+axios: {
+  // Axios module configuration
+  // You can set the default headers here
+  headers: {
+    common: {
+      'Content-Type': 'application/json',
+    },
   },
 },
 
