@@ -3,8 +3,8 @@
         <div class=" pt-40 pb-10">
             <div class="container mx-auto">
                 <div class="w-full md:w-2/3 lg:w-1/2 block mx-auto">
-                    <p v-if="!showPetlover" class="text-white text-4xl font-bold text-center">Forma parte de nuestros <span class="text-primary"> aliados </span> y obtén  <span class="text-primary">beneficios</span> exclusivos</p>
-                    <p v-if="showPetlover" class="text-white text-4xl font-bold text-center">Únete a nuestra comunidad de  <span class="text-primary">petlovers</span></p>
+                    <p v-show="!showPetlover" class="text-white text-4xl font-bold text-center">Forma parte de nuestros <span class="text-primary"> aliados </span> y obtén  <span class="text-primary">beneficios</span> exclusivos</p>
+                    <p v-show="showPetlover" class="text-white text-4xl font-bold text-center">Únete a nuestra comunidad de  <span class="text-primary">petlovers</span></p>
                     <div class=" w-full  pt-10">
                         <div  class="relative">
                             <div class="w-full">
@@ -37,13 +37,13 @@
                                         </label>
                                         <input v-model="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username3" type="text" >
                                     </div>
-                                    <div  v-if="!showPetlover" class="mb-4">
+                                    <div  v-show="!showPetlover" class="mb-4">
                                         <label class="block text-white text-sm font-bold mb-2" for="username4">
                                         Nombre de la compañía
                                         </label>
                                         <input v-model="company" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username4" type="text" >
                                     </div>
-                                    <div  v-if="!showPetlover" class="mb-4">
+                                    <div  v-show="!showPetlover" class="mb-4">
                                         <label class="block text-white text-sm font-bold mb-2" for="username5">
                                         Giro de la empresa
                                         </label>
