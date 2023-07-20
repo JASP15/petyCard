@@ -8,7 +8,7 @@
                 </div>
                 <div class="w-1/3 lg:w-1/2 px-4 flex justify-end ">
                     <div class="w-64 pt-12 ">
-                        <img src="~/assets/images/petcard.jpeg" class="object-cover h-full w-2/3">
+                        <img src="~/assets/images/petcard.jpeg" class="object-cover h-full w-2/3 hover:-rotate-12 transition-all duration-300">
                     </div>
                 </div>
             </div>    
