@@ -3,7 +3,7 @@
     <p class="text-secondary-600 text-4xl font-bold text-center mb-4">¿Cómo  <span class="text-primary ">funciona? </span> </p>
     <p class=" text-lg text-center">Puedes formar parte de nuestros <span class="text-primary-700 font-bold">PETLOVERS</span> o de nuestros <span class="text-primary-700 font-bold">ALIADOS</span></p>     
     <div class="flex flex-wrap">
-      <div class="w-1/2">
+      <div class="w-full lg:w-1/2">
         <p class="text-primary-700 text-2xl font-bold mt-24 mb-12 text-center"> Petlovers</p>
         <ul>
           <li class="list-disc mb-6">
@@ -18,7 +18,7 @@
           </li>
         </ul>       
       </div>
-      <div class="w-1/2 lg:pl-8">
+      <div class="w-full lg:w-1/2 lg:pl-8">
         <p class="text-primary-700 text-2xl font-bold mt-24 mb-12 text-center"> Aliados</p>
         <ul>
           <li class="list-disc mb-6">
