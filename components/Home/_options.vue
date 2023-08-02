@@ -7,7 +7,7 @@
         <p class="text-primary-700 text-2xl font-bold mt-24 mb-12 text-center"> Petlovers</p>
         <ul>
           <li class="list-disc mb-6">
-            Busca en nuestra lista los establecimientos de nuestros aliados  y conoce los descuentos exclusivos que tienen para ti
+            Busca en nuestra lista los establecimientos de nuestros aliados  y conoce los descuentos exclusivos que tienen para ti.
           </li>
           <li class="list-disc mb-6">
             Solo presenta tu Tarjeta Física o Digital al momento de realizar tu cobro en el establecimientos seleccionado.
@@ -22,10 +22,10 @@
         <p class="text-primary-700 text-2xl font-bold mt-24 mb-12 text-center"> Aliados</p>
         <ul>
           <li class="list-disc mb-6">
-            Descuentos exclusivos con nuestros patrocinadores
+            Descuentos exclusivos con nuestros patrocinadores.
           </li>
           <li class="list-disc mb-6">
-            Amplia tu mercado y tus ventas
+            Amplia tu mercado y tus ventas.
           </li>
           <li class="list-disc mb-6">
             Todos nuestros descuentos están respaldados por su respectivo contrato.

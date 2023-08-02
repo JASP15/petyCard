@@ -6,7 +6,7 @@
                     <p class="text-primary font-bold text-5xl mb-10">Descubre la nueva tarjeta petfriendly</p>
                     <a class="bg-primary rounded-2xl px-8 py-3 text-white font-semibold text-lg hover:bg-primary-700 transition-all duration-300" href="#contacto">  Solicítala aquí </a>
                 </div>
-                <div class="w-1/3 lg:w-1/2 px-4 flex justify-end ">
+                <div class="w-0 lg:w-1/2 px-4 flex justify-end ">
                     <div class="w-64 pt-12 ">
                         <img src="~/assets/images/petcard.jpeg" class="object-cover h-full w-2/3 hover:-rotate-12 transition-all duration-300">
                     </div>
