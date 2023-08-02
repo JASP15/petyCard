@@ -1,7 +1,7 @@
 <template>
     <div id="aliados">
         <div class="container mx-auto py-20 px-8">
-            <p class="text-secondary-600 text-4xl font-bold text-center mb-4">Úsala <span class="text-primary ">donde </span> y <span class="text-primary ">cuando</span> quieras </p>
+            <p class="text-secondary-600 text-4xl font-bold text-center mb-4">Úsala <span class="text-primary-700 ">donde </span> y <span class="text-primary-700 ">cuando</span> quieras </p>
             <p class=" text-lg text-center">Conoce todas las tiendas donde podrás obtener multiples beneficios</p>
             <div class="flex flex-wrap justify-center items-center py-12 mt-4 px-4">
                 <div v-for="item in listSponsors" :key="item.id" class="w-full lg:w-1/4 px-6 flex justify-center items-center mb-32 lg:mb-0" >

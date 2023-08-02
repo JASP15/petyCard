@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto py-16 px-8">
-    <p class="text-secondary-600 text-4xl font-bold text-center mb-4">¿Cómo  <span class="text-primary ">funciona? </span> </p>
+    <p class="text-secondary-600 text-4xl font-bold text-center mb-4">¿Cómo  <span class="text-primary-700 ">funciona? </span> </p>
     <p class=" text-lg text-center">Puedes formar parte de nuestros <span class="text-primary-700 font-bold">PETLOVERS</span> o de nuestros <span class="text-primary-700 font-bold">ALIADOS</span></p>     
     <div class="flex flex-wrap">
       <div class="w-full lg:w-1/2">
