@@ -81,7 +81,7 @@ export default {
                 company_rol:  this.rol, 
                 register_name:  this.name, 
                 register_phone:  this.phone, 
-                register_email:  this.name,  
+                register_email:  this.mail,  
                 })
                 this.$refs.formContact.reset()
                 alert(res.detail?res.detail : 'Se ha registrado correctamente tu información')
