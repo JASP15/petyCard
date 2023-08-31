@@ -1,41 +1,25 @@
 <template>
-    <div id="aliados">
-        <div class="container mx-auto py-20 px-8">
+    <div >
+        <div class="container mx-auto pt-32 px-8">
             <p class="text-secondary-600 text-4xl font-bold text-center mb-4">Úsala <span class="text-primary-700 ">donde </span> y <span class="text-primary-700 ">cuando</span> quieras </p>
             <p class=" text-lg text-center">Conoce todas las tiendas donde podrás obtener multiples beneficios</p>
-            <div class="flex flex-wrap justify-center items-center py-12 mt-4 px-4">
-                <div v-for="item in listCompanies.slice(0, 4)" :key="item.id" class="w-full lg:w-1/4 px-6 flex justify-center items-center mb-32 lg:mb-0" >
-                    <div class="flip">
-                    <p class="text-center !text-black text-2xl font-medium h-24 flex items-center justify-center">{{ item.name }}</p>
-                    <div class="flip-content">
-                        <div class="flip-front" :class="{'p-4':item.img}">
-                            <img v-if="item.img" :src="item.img" class="object-contain w-full h-full" />
+            <div class="flex flex-wrap justify-center items-center py-12 my- px-4">
+                <div v-for="item in listCompanies" :key="item.id" class="w-full lg:w-1/4 px-6 flex justify-center items-center lg:mb-0" >
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg mb-8">
+                        <img v-if="item.img" :src="item.picture" class="object-contain w-full" />
                             <img v-else src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
-                        </div>
-                        <div class="flip-back p-4">
-                                <a href="/" target="_blank"  class="relative h-full w-full">
-                                <p class="text-center text-primary-700 text-xl font-medium">Beneficios</p>
-                                <div class="text-white text-left h-full">
-                                    <ul class="mt-4 relative h-[170px]">
-                                        <li>10% en efectivo</li>
-                                        <li>15% tarjeta en tienda</li>
-                                        <li class="text-[9px] mt-6 absolute bottom-0">*No es acumulable con otras promociones</li>
-
-                                    </ul>
-
-                                </div>
-                            </a>
-                            </div>
-                        </div>
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{{ item.name }}</div>
+                        <p v-for="benefit in item.benefits" :key="benefit.index" class="text-gray-700 text-base" >
+                        {{ benefit }}
+                        </p>
+                    </div>
+                    
                     </div>
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-16">
-            <a href="/aliados">
-                    <ButtonComponent>  Conoce a todos nuestros aliados </ButtonComponent>
-                </a>
-        </div>
+        
     </div>
 </template>
 <script>

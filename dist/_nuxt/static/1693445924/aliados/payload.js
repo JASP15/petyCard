@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/aliados", {data:[{}],fetch:{},mutations:void 0});

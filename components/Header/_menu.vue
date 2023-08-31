@@ -8,16 +8,16 @@
                 <div class="w-2/4 hidden md:block">
                     <ul class="flex justify-center items-center">
                         <li class="px-4">
-                            <a class="text-primary hover:text-white text-2xl font-semibold" href="#home">Inicio</a>
+                            <a class="text-primary hover:text-white text-2xl font-semibold" href="/#home">Inicio</a>
                         </li>
                         <li class="px-4">
-                            <a class="text-primary hover:text-white text-2xl font-semibold" href="#beneficios">Beneficios</a>
+                            <a class="text-primary hover:text-white text-2xl font-semibold" href="/#beneficios">Beneficios</a>
                         </li>
                         <li class="px-4">
-                            <a class="text-primary hover:text-white text-2xl font-semibold" href="#aliados">Aliados</a>
+                            <a class="text-primary hover:text-white text-2xl font-semibold" href="/aliados">Aliados</a>
                         </li>
                         <li class="px-4">
-                            <a class="text-primary hover:text-white text-2xl font-semibold" href="#contacto">Solicitar</a>
+                            <a class="text-primary hover:text-white text-2xl font-semibold" href="/#contacto">Solicitar</a>
                         </li>
                         
                     </ul>
