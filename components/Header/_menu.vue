@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed inset-0 w-full py-6 px-4 h-24 bg-secondary-800 z-10">
+    <div class="fixed inset-0 w-full py-6 px-4 h-24 bg-secondary-800 z-20">
         <div class="container mx-auto">
             <div class="flex flex-wrap">
                 <div class="w-1/4 flex items-center justify-center">
