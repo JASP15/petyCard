@@ -88,7 +88,7 @@ export default {
             
         } catch (error) {
             this.$refs.formContact.reset()
-            alert('Se ha registrado correctamente tu información')
+            alert(error.errors.register_email? error.errors.register_email[0] : 'Ha ocurrido un error al registrar tu información, verifica tu correo y que no se haya registrado previamente.')
         }
             
     },

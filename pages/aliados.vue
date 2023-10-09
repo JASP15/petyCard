@@ -60,7 +60,6 @@ export default {
               this.listCompanies = res.data;
         } catch (error) {
             this.$refs.formContact.reset()
-            alert('Se ha registrado correctamente tu información')
         }
             
     },
