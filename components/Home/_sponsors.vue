@@ -8,8 +8,8 @@
                     <div class="flip">
                     <p class="text-center !text-black text-2xl font-medium h-24 flex items-center justify-center">{{ item.name }}</p>
                     <div class="flip-content">
-                        <div class="flip-front" :class="{'p-4':item.img}">
-                            <img v-if="item.img" :src="item.img" class="object-contain w-full h-full" />
+                        <div class="flip-front" :class="{'p-4':item.picture}">
+                            <img v-if="item.picture" :src="item.picture" class="object-contain w-full h-full" />
                             <img v-else src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
                         </div>
                         <div class="flip-back p-4">
@@ -17,8 +17,8 @@
                                 <p class="text-center text-primary-700 text-xl font-medium">Beneficios</p>
                                 <div class="text-white text-left h-full">
                                     <ul class="mt-4 relative h-[170px]">
-                                        <li>10% en efectivo</li>
-                                        <li>15% tarjeta en tienda</li>
+                                        <li v-for="benefit in item.benefits" :key="benefit">{{ benefit }}</li>
+                                        <li v-if="item.benefits = []"> ¡Vaya! PArece que este aliado aun registra beneficios</li>
                                         <li class="text-[9px] mt-6 absolute bottom-0">*No es acumulable con otras promociones</li>
 
                                     </ul>
