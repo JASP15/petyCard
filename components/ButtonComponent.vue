@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="cssbuttons-io">
+        <button class="cssbuttons-io dropbtn">
             <span> <slot></slot></span>
         </button>
     </div>
