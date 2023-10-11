@@ -13,22 +13,20 @@
                             <img v-else src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
                         </div>
                         <div class="flip-back p-4">
-                                <a href="/" target="_blank"  class="relative h-full w-full">
+                            <a href="/" target="_blank"  class="relative h-full w-full">
                                 <p class="text-center text-primary-700 text-xl font-medium">Beneficios</p>
-                                <div class="text-white text-left h-full">
-                                    <ul class="mt-4 relative h-[170px]">
-                                        <li v-for="benefit in item.benefits" :key="benefit.index" class="text-gray-700 text-base" >
+                                <div class="text-white text-left h-full ">
+                                    <div class="mt-4 relative h-[170px]">
+                                        <p v-for="benefit in item.benefits" :key="benefit.index" class=" text-base" >
                                             {{ benefit.benefit }}
-                                        </li>
-                                        <li v-if="item.benefits = []"> ¡Vaya! PArece que este aliado aun registra beneficios</li>
-                                        <li class="text-[9px] mt-6 absolute bottom-0">*No es acumulable con otras promociones</li>
+                                        </p>
+                                        <P class="text-[9px] mt-6 absolute bottom-0">*No es acumulable con otras promociones</P>
 
-                                    </ul>
-
+                                    </div>
                                 </div>
                             </a>
-                            </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -44,7 +42,9 @@
 export default {
   data() {
     return {
-        listCompanies:[],
+        listCompanies:[
+
+        ],
     }
   },
   mounted(){    
@@ -54,10 +54,10 @@ export default {
     async getCompanies() {
         try {
             const res = await this.$axios.$get('https://api.petycard.com/api/company', {})
+            console.log(res)
               this.listCompanies = res.data;
         } catch (error) {
-            console.log(error)
-           
+          console.log(error)
         }
             
     },
