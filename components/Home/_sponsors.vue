@@ -4,7 +4,7 @@
             <p class="text-secondary-600 text-4xl font-bold text-center mb-4">Úsala <span class="text-primary-700 ">donde </span> y <span class="text-primary-700 ">cuando</span> quieras </p>
             <p class=" text-lg text-center">Conoce todas las tiendas donde podrás obtener multiples beneficios</p>
             <div class="flex flex-wrap justify-center items-center py-12 mt-4 px-4">
-                <div v-for="item in listCompanies.slice(0, 4)" :key="item.id" class="w-full lg:w-1/4 px-6 flex justify-center items-center mb-32 lg:mb-0" >
+                <div v-for="item in listCompanies" :key="item.id" class="w-full lg:w-1/4 px-6 flex justify-center items-center mb-32 lg:mb-0" >
                     <div class="flip">
                     <p class="text-center !text-black text-2xl font-medium h-24 flex items-center justify-center">{{ item.name }}</p>
                     <div class="flip-content">
@@ -17,7 +17,9 @@
                                 <p class="text-center text-primary-700 text-xl font-medium">Beneficios</p>
                                 <div class="text-white text-left h-full">
                                     <ul class="mt-4 relative h-[170px]">
-                                        <li v-for="benefit in item.benefits" :key="benefit">{{ benefit }}</li>
+                                        <li v-for="benefit in item.benefits" :key="benefit.index" class="text-gray-700 text-base" >
+                                            {{ benefit.benefit }}
+                                        </li>
                                         <li v-if="item.benefits = []"> ¡Vaya! PArece que este aliado aun registra beneficios</li>
                                         <li class="text-[9px] mt-6 absolute bottom-0">*No es acumulable con otras promociones</li>
 
@@ -42,27 +44,7 @@
 export default {
   data() {
     return {
-        listCompanies:[
-            {
-                name:'PetyCard',
-                img: false,
-
-            },
-            {
-                name:'PetyCard + ',
-                img: false,
-
-            },
-            {
-                name:'PetyCard  +2',
-                img: false,
-
-            },
-            {
-                name:'Estética de perros Valle Don Camilo',
-                img:false
-            }
-        ],
+        listCompanies:[],
     }
   },
   mounted(){    
@@ -72,11 +54,10 @@ export default {
     async getCompanies() {
         try {
             const res = await this.$axios.$get('https://api.petycard.com/api/company', {})
-            console.log(res)
               this.listCompanies = res.data;
         } catch (error) {
-            this.$refs.formContact.reset()
-            alert('Se ha registrado correctamente tu información')
+            console.log(error)
+           
         }
             
     },

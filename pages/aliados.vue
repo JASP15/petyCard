@@ -6,12 +6,12 @@
             <div class="flex flex-wrap justify-center items-center py-12 my- px-4">
                 <div v-for="item in listCompanies" :key="item.id" class="w-full lg:w-1/4 px-6 flex justify-center items-center lg:mb-0" >
                     <div class="max-w-sm rounded overflow-hidden shadow-lg mb-8">
-                        <img v-if="item.img" :src="item.picture" class="object-contain w-full" />
+                        <img v-if="item.picture" :src="item.picture" class="object-contain w-full" />
                             <img v-else src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">{{ item.name }}</div>
                         <p v-for="benefit in item.benefits" :key="benefit.index" class="text-gray-700 text-base" >
-                        {{ benefit }}
+                        {{ benefit.benefit }}
                         </p>
                     </div>
                     
@@ -27,25 +27,7 @@ export default {
   data() {
     return {
         listCompanies:[
-            {
-                name:'PetyCard',
-                img: false,
 
-            },
-            {
-                name:'PetyCard + ',
-                img: false,
-
-            },
-            {
-                name:'PetyCard  +2',
-                img: false,
-
-            },
-            {
-                name:'Estética de perros Valle Don Camilo',
-                img:false
-            }
         ],
     }
   },
@@ -59,7 +41,7 @@ export default {
             console.log(res)
               this.listCompanies = res.data;
         } catch (error) {
-            this.$refs.formContact.reset()
+          console.log(error)
         }
             
     },
