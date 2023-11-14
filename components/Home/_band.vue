@@ -70,7 +70,7 @@ export default {
         mail:'',
         phone:'',
         company:'',
-        rol:'PETLOVER'
+        rol:''
     }
   },
   methods: {

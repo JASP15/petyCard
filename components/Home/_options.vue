@@ -7,28 +7,39 @@
         <p class="text-primary-700 text-2xl font-bold mt-24 mb-12 text-center"> Petlovers</p>
         <ul>
           <li class="list-disc mb-6">
-            Busca en nuestra lista los establecimientos de nuestros aliados  y conoce los descuentos exclusivos que tienen para ti.
+            Busca en nuestra comunidad recomendaciones de tus problemas y necesidades
           </li>
           <li class="list-disc mb-6">
-            Solo presenta tu Tarjeta Física o Digital al momento de realizar tu cobro en el establecimientos seleccionado.
+            Encuentra beneficios, descuentos y recompensas con nuestra comunidad de aliados Petycard
     
           </li>
           <li class="list-disc mb-6">
-            Todos nuestros descuentos están respaldados por su respectivo contrato.
+            Puedes adquirir tu tarjeta Petycard para que protejas a tus mascotas
+
+          </li>
+          <li class="list-disc mb-6">
+            Pertenece a la comunidad más grande de Petlovers, comparte, ayuda, conoce y disfruta de ser parte de esta comunidad
+
           </li>
         </ul>       
       </div>
-      <div class="w-full lg:w-1/2 lg:pl-8">
+      <div class="w-full lg:w-1/2 lg:pl-16">
         <p class="text-primary-700 text-2xl font-bold mt-24 mb-12 text-center"> Aliados</p>
         <ul>
           <li class="list-disc mb-6">
-            Descuentos exclusivos con nuestros patrocinadores.
+            Pertenece y apoya a la comunidad de PETLOVERS
+
           </li>
           <li class="list-disc mb-6">
-            Amplia tu mercado y tus ventas.
+            Ofrece tus productos y servicios
+
           </li>
           <li class="list-disc mb-6">
-            Todos nuestros descuentos están respaldados por su respectivo contrato.
+            Apoyamos al mercado local
+
+          </li>
+          <li class="list-disc mb-6">
+            Nos actualizamos para ti, Petycard te ofrece herramientas para que mejores tu negocio
           </li>
         </ul>   
       </div>
