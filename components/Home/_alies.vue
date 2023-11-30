@@ -30,11 +30,7 @@ export default {
                 img: 'dtiqr.png',
 
             },
-            {
-                url:'https://www.cuallet.com/',
-                img: 'LogoCuallet.png',
-
-            },
+        
             {
                 img: 'desclub.png',
                 url: 'https://desclub.com.mx/'
