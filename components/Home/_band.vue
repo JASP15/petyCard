@@ -3,20 +3,12 @@
         <div class=" pt-40 pb-10">
             <div class="container mx-auto">
                 <div class="w-full md:w-2/3 lg:w-1/2 block mx-auto">
-                    <p v-show="!showPetlover" class="text-white text-4xl font-bold text-center">Forma parte de nuestros <span class="text-primary"> aliados </span> y obtén  <span class="text-primary">beneficios</span> exclusivos</p>
-                    <p v-show="showPetlover" class="text-white text-4xl font-bold text-center">Únete a nuestra comunidad de  <span class="text-primary">petlovers</span></p>
+                    <p class="text-white text-4xl font-bold text-center">Forma parte de nuestros <span class="text-primary"> aliados </span> y obtén  <span class="text-primary">beneficios</span> exclusivos</p>
+                   
                     <div class=" w-full  pt-10">
                         <div  class="relative">
                             <div class="w-full">
-                                <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
-                                    <li class="mr-2">
-                                        <button   class="inline-block p-4  rounded-t-lg active hover:text-gray-600 hover:bg-gray-50  bg-gray-100 bg-opacity-20" :class="{'text-primary-700 !bg-secondary-600':!showPetlover}"  @click="showPetlover = false">Aliados</button>
-                                    </li>
-                                    <li class="mr-2">
-                                        <button  class="inline-block p-4 rounded-t-lg  bg-gray-100 bg-opacity-10 hover:text-gray-600 hover:bg-gray-50" :class="{'text-primary-700 !bg-secondary-600':showPetlover}"  @click="showPetlover = true">Petlovers</button>
-                                    </li>
-                              
-                                </ul>
+       
 
                                 <form ref="formContact" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-opacity-20" >
                                     <div class="mb-4">
@@ -37,13 +29,13 @@
                                         </label>
                                         <input v-model="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username3" type="text" >
                                     </div>
-                                    <div  v-show="!showPetlover" class="mb-4">
+                                    <div  class="mb-4">
                                         <label class="block text-white text-sm font-bold mb-2" for="username4">
                                         Nombre de la compañía
                                         </label>
                                         <input v-model="company" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username4" type="text" >
                                     </div>
-                                    <div  v-show="!showPetlover" class="mb-4">
+                                    <div class="mb-4">
                                         <label class="block text-white text-sm font-bold mb-2" for="username5">
                                         Giro de la empresa
                                         </label>
@@ -54,6 +46,7 @@
                             </div>
                         </div>
                     </div>
+                    <p  class="text-white text-4xl font-bold text-center">O únete a nuestra comunidad de  petlovers <span class="text-primary"> <a href="http://" target="_blank" rel="noopener noreferrer">¡AQUI!</a> </span></p>
                 </div>
             </div>
         </div>
