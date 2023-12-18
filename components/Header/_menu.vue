@@ -11,6 +11,9 @@
                             <a class="text-primary hover:text-white text-2xl font-semibold" href="/#home">Inicio</a>
                         </li>
                         <li class="px-4">
+                            <a class="text-primary hover:text-white text-2xl font-semibold" href="https://petlovers-connect.mn.co/" target="_blank">Comunidad</a>
+                        </li>
+                        <li class="px-4">
                             <a class="text-primary hover:text-white text-2xl font-semibold" href="/#beneficios">Beneficios</a>
                         </li>
                         <li class="px-4">
@@ -19,6 +22,7 @@
                         <li class="px-4">
                             <a class="text-primary hover:text-white text-2xl font-semibold" href="/#contacto">Solicitar</a>
                         </li>
+                       
                         
                     </ul>
                 </div>
