@@ -11,7 +11,7 @@
                                 <div class="w-full">
            
                                     <form ref="formContact" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-opacity-20 flex flex-wrap" >
-                                        <div class="w-1/2 px-4">
+                                        <div class="w-full lg:w-1/2 px-4">
                                             <p class="text-primary-500 mb-6 font-bold text-xl">Datos personales</p>
                                             <div class="mb-4  w-full ">
                                                 <label class="block text-white text-sm font-bold mb-2" for="username">
@@ -36,7 +36,7 @@
                                             </div>
 
                                         </div>
-                                        <div class="w-1/2 px-4">
+                                        <div class="w-full lg:w-1/2 px-4">
                                             <p class="text-primary-500 mb-6 font-bold text-xl">Datos del negocio</p>
 
                                             <div  class="mb-4 w-full ">
