@@ -1,5 +1,5 @@
 <template>
-    <div id="aliados">
+    <div id="aliados" v-if="listCompanies.length > 0">
         <div class="container mx-auto py-20 px-8">
             <p class="text-secondary-600 text-4xl font-bold text-center mb-4">Úsala <span class="text-primary-700 ">donde </span> y <span class="text-primary-700 ">cuando</span> quieras </p>
             <p class=" text-lg text-center">Conoce todas las tiendas donde podrás obtener multiples beneficios</p>
