@@ -77,7 +77,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p  class="text-white text-4xl font-bold text-center">O únete a nuestra comunidad de  petlovers <span class="text-primary"> <a href="https://petlovers-connect.mn.co/" target="_blank" rel="noopener noreferrer">¡AQUI!</a> </span></p>
+                        <p  class="text-white text-4xl font-bold text-center">O únete a nuestra comunidad de  petlovers <span class="text-primary"> <a href="https://user.petycard.com/login" target="_blank" rel="noopener noreferrer">¡AQUI!</a> </span></p>
                     </div>
                 </div>
             </div>
