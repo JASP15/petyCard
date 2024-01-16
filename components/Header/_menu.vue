@@ -31,7 +31,7 @@
                     <ButtonComponent>  Iniciar sesión </ButtonComponent>
                     <div class="dropdown-content bg-secondary-800 rounded-xl">
                         <a class="hover:bg-primary-700" href="https://customer.petycard.com/" target="_blank">Aliados</a>
-                        <a class="hover:bg-primary-700" href="https://user.petycard.com/" target="_blank">Petlovers</a>
+                        <a class="hover:bg-primary-700" href="https://user.petycard.com/register" target="_blank">Petlovers</a>
                     </div>
                     </div>
                     

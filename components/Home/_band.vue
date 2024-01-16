@@ -35,6 +35,14 @@
                                                 <p class="text-red-500" v-for="(error, index) in  errors?.register_phone" :key="index"> {{ error}}</p>
                                             </div>
 
+                                            <div class="mt-4  w-full">
+                                                <label class="block text-white text-sm font-bold mb-2" for="reference">
+                                                ¿Tienes un codigo?
+                                                </label>
+                                                <input v-model="reference" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="reference" type="text" >
+                                               
+                                            </div>
+
                                         </div>
                                         <div class="w-full lg:w-1/2 px-4">
                                             <p class="text-primary-500 mb-6 font-bold text-xl">Datos del negocio</p>
@@ -99,6 +107,7 @@ export default {
         company_reference:'',
         company_reference_charge:'',
         company_phone:'',
+        reference:'',
         errors: {
             company_name:[],
             company_rol:[],
@@ -111,7 +120,7 @@ export default {
   methods: {
     async onSubmit() {
       
-            const res = await this.$axios.$post('https://api.petycard.com/api/company', {
+            const res = await this.$axios.$post('http://petycard-api.test/company', {
                 company_name:this.company, 
                 company_rol:  this.rol, 
                 company_reference:this.company_reference,
@@ -120,6 +129,7 @@ export default {
                 register_name:  this.name, 
                 register_phone:  this.phone, 
                 register_email:  this.mail,  
+                reference: this.reference
                 
                 }).catch((error)=> {
                     alert( 'No se ha registrado correctamente tu información')
