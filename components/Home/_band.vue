@@ -120,7 +120,7 @@ export default {
   methods: {
     async onSubmit() {
       
-            const res = await this.$axios.$post('http://petycard-api.test/company', {
+            const res = await this.$axios.$post('https://api.petycard.com/api/company', {
                 company_name:this.company, 
                 company_rol:  this.rol, 
                 company_reference:this.company_reference,
