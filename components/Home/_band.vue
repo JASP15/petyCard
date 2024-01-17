@@ -55,6 +55,14 @@
                                                 
                                                 <p class="text-red-500" v-for="(error, index) in  errors?.company_name" :key="index"> {{ error}}</p>
                                             </div>
+                                            <div  class="mb-4 w-full ">
+                                                <label class="block text-white text-sm font-bold mb-2" for="rol">
+                                                * Giro del negocio
+                                                </label>
+                                                <input v-model="rol" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="rol" type="text" >
+                                                
+                                                <p class="text-red-500" v-for="(error, index) in  errors?.company_name" :key="index"> {{ error}}</p>
+                                            </div>
                                             <div class="mb-4 w-full ">
                                                 <label class="block text-white text-sm font-bold mb-2" for="company_reference">
                                                 Contacto de referencia 
