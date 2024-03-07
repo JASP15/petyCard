@@ -36,7 +36,8 @@ export default {
                 url: 'https://www.parquetec.org'
             },
             {
-                img:'logosaluddirecta.png'
+                img:'logosaluddirecta.png',
+                url:'https://saludirecta.com/'
             }
            
            
