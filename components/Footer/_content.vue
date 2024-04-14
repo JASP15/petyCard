@@ -20,7 +20,13 @@
               
     
             </div>
-            <p class="text-white text-xl font-semibold hover:text-primary transition-all duration-300 cursor-pointer"> © 2022 PetyCard</p>
+            <div>
+                <p class="text-white text-xl font-semibold hover:text-primary transition-all duration-300 cursor-pointer"> © 2022 PetyCard</p>
+                <p class="text-white text-xl font-semibold hover:text-primary transition-all duration-300 cursor-pointer py-4"><a href="/terminos">Términos y condiciones</a></p>
+                <p class="text-white text-xl font-semibold hover:text-primary transition-all duration-300 cursor-pointer"> <a href="/politica">Política de privacidad</a></p>
+                <p class="text-white text-xl font-semibold hover:text-primary transition-all duration-300 cursor-pointer py-4"> <a href="/reembolso"> Política de Reembolso</a></p>
+            </div>
+
         </div>
     </div>
 </template>
