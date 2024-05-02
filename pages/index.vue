@@ -5,7 +5,7 @@
     <HomeOptions />
     <HomeSponsors />
     <HomeAlies />
-    
+    <HomePlans />
     <HomeBand />
     
   </div>
