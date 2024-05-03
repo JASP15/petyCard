@@ -59,6 +59,49 @@
                     <p>
                         Reservamos el derecho de realizar cambios en esta política en cualquier momento. Cualquier modificación será efectiva cuando se publique en el sitio web.
                     </p> 
+                    <p>
+                        Derechos de uso de información
+                        Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté des actualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.
+                    </p>
+                    <p>
+                        Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente medio:
+                    </p>
+                    <p>
+                        Enviando un correo electrónico a la dirección mi@petycard.com.mx Con relación al procedimiento y requisitos para el ejercicio de sus derechos ARCO, le informamos lo siguiente:
+                    </p>
+                    <ul>
+                        <li>
+                            a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último?
+                            Presentando una identificación oficial vigente
+
+                        </li>
+                        <li>
+                            b) ¿Qué información y/o documentación deberá contener la solicitud? Nombre completo, solicitud
+                        </li>
+                        <li>
+                            c) ¿En cuántos días le daremos respuesta a su solicitud? 72 hrs
+                        </li>
+                        <li>
+                            d) ¿Por qué medio le comunicaremos la respuesta a su solicitud? Vía correo electrónico
+
+                        </li>
+                        <li>
+                            e) ¿En qué medios se pueden reproducir los datos personales que, en su caso, solicite? En su computadora
+                           
+                        </li>
+                    </ul>
+                    <p>
+                        Los datos de contacto de la persona o departamento de datos personales, que está a cargo de dar trámite a las solicitudes de derechos ARCO, son los siguientes:
+                    </p>
+                    <ul>
+                        <li>
+                            a) Nombre de la persona o departamento de datos personales: Atención clientes
+                        </li>
+                        <li>
+                            b) Correo electrónico: mi@petycard.com.mx
+                        </li>
+                    </ul>
+
                     <h4>Contacto</h4>
                         <p>
                             Si tiene alguna pregunta o inquietud acerca de nuestra política de privacidad, puede ponerse en contacto con nosotros a través del correo electrónico: hola@Petycard.com.

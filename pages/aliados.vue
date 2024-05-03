@@ -6,8 +6,8 @@
             <div class="flex flex-wrap justify-center items-center py-12 my- px-4">
                 <div v-for="item in listCompanies" :key="item.id" class="w-full lg:w-1/4 px-6 flex justify-center items-center lg:mb-0" >
                     <div class="max-w-sm rounded overflow-hidden shadow-lg mb-8">
-                        <img v-if="item.picture" :src="item.picture" class="object-contain w-full" />
-                            <img v-else src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
+                        <img v-show="item.picture" :src="item.picture" class="object-contain w-full" />
+                            <img v-show="!item.picture" src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">{{ item.name }}</div>
                         <p v-for="benefit in item.benefits" :key="benefit.index" class="text-gray-700 text-base" >

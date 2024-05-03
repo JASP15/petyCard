@@ -1,5 +1,5 @@
 <template>
-    <div id="aliados" v-if="listCompanies.length > 0">
+    <div id="aliados" v-show="listCompanies.length > 0">
         <div class="container mx-auto py-20 px-8">
             <p class="text-secondary-600 text-4xl font-bold text-center mb-4">Úsala <span class="text-primary-700 ">donde </span> y <span class="text-primary-700 ">cuando</span> quieras </p>
             <p class=" text-lg text-center">Conoce todas las tiendas donde podrás obtener multiples beneficios</p>
@@ -9,8 +9,8 @@
                     <p class="text-center !text-black text-2xl font-medium h-24 flex items-center justify-center">{{ item.name }}</p>
                     <div class="flip-content">
                         <div class="flip-front" :class="{'p-4':item.picture}">
-                            <img v-if="item.picture" :src="item.picture" class="object-contain w-full h-full" />
-                            <img v-else src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
+                            <img v-show="item.picture" :src="item.picture" class="object-contain w-full h-full" />
+                            <img v-show="!item.picture" src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
                         </div>
                         <div class="flip-back p-4">
                             <a href="/" target="_blank"  class="relative h-full w-full">

@@ -36,7 +36,7 @@
                         </li>
                         
                         </ul>
-                        <a v-if="benefit?.url" v-bind="benefit?.url" target="_blank" class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
+                        <a v-show="benefit?.url" v-bind="benefit?.url" target="_blank" class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
                         Adquirir
                         </a>
                     </div>
