@@ -4,18 +4,32 @@
             <p class="text-secondary-600 text-4xl font-bold text-center mb-4">Úsala <span class="text-primary-700 ">donde </span> y <span class="text-primary-700 ">cuando</span> quieras </p>
             <p class=" text-lg text-center">Conoce todas las tiendas donde podrás obtener multiples beneficios</p>
             <div class="flex flex-wrap justify-center items-center py-12 my- px-4">
-                <div v-for="item in listCompanies" :key="item.id" class="w-full lg:w-1/4 px-6 flex justify-center items-center lg:mb-0" >
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg mb-8">
-                        <img v-show="item.picture" :src="item.picture" class="object-contain w-full" />
+                <div v-for="item in listCompanies" :key="item.id" class="w-full lg:w-1/3 px-6 flex justify-center items-center lg:mb-6" >
+            
+                  <div class="flip">
+                    <p class="text-center !text-black text-2xl font-medium h-24 flex items-center justify-center">{{ item.name }}</p>
+                    <div class="flip-content">
+                        <div class="flip-front" :class="{'p-4':item.picture}">
+                            <img v-show="item.picture" :src="item.picture" class="object-contain w-full h-full" />
                             <img v-show="!item.picture" src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">{{ item.name }}</div>
-                        <p v-for="benefit in item.benefits" :key="benefit.index" class="text-gray-700 text-base" >
-                        {{ benefit.benefit }}
-                        </p>
+                        </div>
+                        <div class="flip-back p-4">
+                            <a :href="item.maps_url" target="_blank"  class="relative h-full w-full">
+                                <p class="text-center text-primary-700 text-xl font-medium">Beneficios</p>
+                                <div class="text-white text-left max-h-40 overflow-auto ">
+                                    <div class="mt-4 relative h-[170px]">
+                                        <p v-for="benefit in item.benefits" :key="benefit.index" class=" text-base" >
+                                            {{ benefit.benefit }}
+                                        </p>
+                                        
+                                        </div>
+                                      <P class="text-[9px] mt-6 absolute -bottom-4">*No es acumulable con otras promociones</P>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    
                     </div>
+
                 </div>
             </div>
         </div>

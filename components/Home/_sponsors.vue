@@ -13,16 +13,16 @@
                             <img v-show="!item.picture" src="~//assets/images/logo_petycard_img.png" class="object-contain w-full h-full" />
                         </div>
                         <div class="flip-back p-4">
-                            <a href="/" target="_blank"  class="relative h-full w-full">
+                            <a :href="item.maps_url" target="_blank"  class="relative h-full w-full">
                                 <p class="text-center text-primary-700 text-xl font-medium">Beneficios</p>
-                                <div class="text-white text-left h-full ">
+                                <div class="text-white text-left max-h-40 overflow-auto ">
                                     <div class="mt-4 relative h-[170px]">
                                         <p v-for="benefit in item.benefits" :key="benefit.index" class=" text-base" >
                                             {{ benefit.benefit }}
                                         </p>
-                                        <P class="text-[9px] mt-6 absolute bottom-0">*No es acumulable con otras promociones</P>
-
-                                    </div>
+                                        
+                                        </div>
+                                      <P class="text-[9px] mt-6 absolute -bottom-4">*No es acumulable con otras promociones</P>
                                 </div>
                             </a>
                         </div>
