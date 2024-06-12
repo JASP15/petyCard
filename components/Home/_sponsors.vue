@@ -5,8 +5,8 @@
             <p class=" text-lg text-center">Conoce todas las tiendas donde podrás obtener multiples beneficios</p>
             <div class="flex flex-wrap justify-center items-center py-12 mt-4 px-4">
                 <div v-for="item in listCompanies" :key="item.id" class="w-full lg:w-1/4 px-6 flex justify-center items-center mb-32 lg:mb-0" >
-                    <div class="flip">
-                    <p class="text-center !text-black text-2xl font-medium h-24 flex items-center justify-center">{{ item.name }}</p>
+                    <div class="flip mb-20">
+                    <p class="text-center !text-black text-2xl font-medium max-h-20 flex items-center justify-center">{{ item.name }}</p>
                     <div class="flip-content">
                         <div class="flip-front" :class="{'p-4':item.picture}">
                             <img v-show="item.picture" :src="item.picture" class="object-contain w-full h-full" />
