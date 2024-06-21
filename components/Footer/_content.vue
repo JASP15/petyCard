@@ -20,6 +20,30 @@
               
     
             </div>
+            <div class="w-1/3">
+                <p class=" font-bold text-primary-700 text-2xl">Nosotros:</p>
+                <div class="text-white text-xl">
+                    <p class=" my-3">
+                        <a href="https://maps.app.goo.gl/D5PijFJ57fK1vZT76" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Cerrada Santa cruz no 24, Col. las haciendas, Metepec 
+                        </a>
+                    </p>
+                    <p class=" my-3">
+                        <a href="https://www.instagram.com/petycardmx/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                           @petycardmx
+                        </a>
+                    </p>
+                    <p class=" my-3">
+                        <a href="https://www.facebook.com/petycardmx" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            petycardmx
+                        </a>
+                    </p>
+                   
+                </div>
+            </div>
             <div>
                 <p class="text-white text-xl font-semibold hover:text-primary transition-all duration-300 cursor-pointer"> © 2022 PetyCard</p>
                 <p class="text-white text-xl font-semibold hover:text-primary transition-all duration-300 cursor-pointer py-4"><a href="/terminos">Términos y condiciones</a></p>
