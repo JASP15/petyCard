@@ -1,7 +1,7 @@
 <template>
     <div class="py-10 bg-secondary-600 ">
         <div class="container mx-auto flex justify-between items-center  flex-wrap">
-            <div class="w-1/3">
+            <div class="w-full lg:w-1/3">
                 <p class=" font-bold text-primary-700 text-2xl">Contacto:</p>
                 <div class="text-white text-xl">
                     <p class="my-6">
@@ -20,7 +20,7 @@
               
     
             </div>
-            <div class="w-1/3">
+            <div class="w-full lg:w-1/3">
                 <p class=" font-bold text-primary-700 text-2xl">Nosotros:</p>
                 <div class="text-white text-xl">
                     <p class=" my-3">
