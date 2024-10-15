@@ -9,7 +9,6 @@
                         <div class=" w-full  pt-10">
                             <div  class="relative">
                                 <div class="w-full flex flex-wrap justify-center">
-           
                                     <form ref="formContact" class="items-center bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-opacity-20 flex flex-wrap w-2/3" >
                                         <div class="w-full px-4 flex flex-wrap">
                                             <p class="text-primary-500 mb-6 font-bold text-xl">Datos personales</p>
@@ -134,19 +133,21 @@ export default {
   },
   methods: {
     async onSubmit() {
-      
-            const res = await this.$axios.$post('https://api.petycard.com/api/company', {
+      const payload = {
                 register_name:  this.name, 
                 register_phone:  this.phone, 
                 register_email:  this.mail,  
-                company_name: this.company_name, 
+                company_name: this.company, 
                 company_rol:  this.rol, 
                 company_reference:this.company_reference,
                 company_reference_charge:this.company_reference_charge,
                 company_phone:this.company_phone,
                 reference: this.reference
                 
-                }).catch((error)=> {
+                }
+                console.log(payload);
+                
+            const res = await this.$axios.$post('https://api.petycardmx.com/api/company', payload).catch((error)=> {
                     alert( 'No se ha registrado correctamente tu información')
                     if (error.response) {
                         this.errors = error.response?.data?.errors

@@ -53,7 +53,7 @@ export default {
   methods: {
     async getCompanies() {
         try {
-            const res = await this.$axios.$get('https://api.petycard.com/api/company', {})
+            const res = await this.$axios.$get('https://api.petycardmx.com/api/company', {})
             console.log(res)
               this.listCompanies = res.data;
         } catch (error) {
