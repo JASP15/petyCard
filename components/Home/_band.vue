@@ -9,7 +9,7 @@
                         <div class=" w-full  pt-10">
                             <div  class="relative">
                                 <div class="w-full flex flex-wrap justify-center">
-                                    <form ref="formContact" class="items-center bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-opacity-20 flex flex-wrap w-2/3" >
+                                    <form ref="formContact" class="items-center bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-opacity-20 flex flex-wrap w-full lg:w-2/3" >
                                         <div class="w-full px-4 flex flex-wrap">
                                             <p class="text-primary-500 mb-6 font-bold text-xl">Datos personales</p>
                                             <div class="mb-4  w-full ">
@@ -19,14 +19,14 @@
                                                 <input v-model="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" >
                                                 <p class="text-red-500" v-for="(error, index) in  errors?.register_name" :key="index"> {{ error}}</p>
                                             </div>
-                                            <div class="mb-4 w-1/2  pr-2">
+                                            <div class="mb-4 w-full  lg:w-1/2  pr-2">
                                                 <label class="block text-white text-sm font-bold mb-2" for="username2">
                                                 * Correo
                                                 </label>
                                                 <input v-model="mail"  class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="username2" type="text" >
                                                 <p class="text-red-500" v-for="(error, index) in  errors?.register_email" :key="index"> {{ error}}</p>
                                             </div>
-                                            <div class="mb-4  w-1/2 pl-2">
+                                            <div class="mb-4 w-full  lg:w-1/2 lg:pl-2">
                                                 <label class="block text-white text-sm font-bold mb-2" for="username3">
                                                 * Teléfono
                                                 </label>
